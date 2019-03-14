@@ -6,7 +6,7 @@ class TaxCalculation
     
     private $scopeConfig;
 
-    function __construct(
+    public function __construct(
         \Magento\Tax\Model\Calculation $taxCalculation,
         \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
     )
@@ -16,7 +16,7 @@ class TaxCalculation
     }
 
 
-    function execute()
+    public function execute()
     {
         // loop of products
         for (;;) {
