@@ -3,12 +3,16 @@
 class TaxCalculation 
 {
     private $taxCalculation;
+    
+    private $scopeConfig;
 
     function __construct(
-        \Magento\Tax\Model\Calculation $taxCalculation
+        \Magento\Tax\Model\Calculation $taxCalculation,
+        \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
     )
     {
         $this->taxCalculation = $taxCalculation;
+        $this->scopeConfig = $scopeConfig;
     }
 
 
