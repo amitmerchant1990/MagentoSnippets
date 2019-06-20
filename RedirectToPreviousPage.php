@@ -3,7 +3,7 @@
 namespace Company\Module\Controller\Index;
 use Magento\Framework\Controller\ResultFactory; 
 
-class Actionname name extends \Magento\Framework\App\Action\Action
+class Actionname extends \Magento\Framework\App\Action\Action
 {      
     public function execute()
     {
